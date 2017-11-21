@@ -7,16 +7,16 @@
         mc:Ignorable="d"
         Title="calculate Crate" Height="350" Width="525">
     <Grid x:Name="ClrInventory">
-        <Button x:Name="AirRuneCrate" Content="Buy Air Rune Crate" HorizontalAlignment="Left" Margin="32,222,0,0" VerticalAlignment="Top" Width="112" Click="AirRune_Click" Height="22"/>
-        <ListView Name="lvwMylistvieuw" HorizontalAlignment="Left" Height="184" Margin="32,24,0,0" VerticalAlignment="Top" Width="447">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn x:Name="GrdCol1" Width="10"/>
-                </GridView>
-            </ListView.View>
-        </ListView>
-        <Button x:Name="FoodCrate" Content="Buy Food crate" HorizontalAlignment="Left" Margin="32,249,0,0" VerticalAlignment="Top" Width="112" Height="24" Click="FoodCrate_Click"/>
-        <Button Content="inventory clear" HorizontalAlignment="Left" Margin="378,222,0,0" VerticalAlignment="Top" Width="101" Height="22" Click="Button_Click"/>
+        <Button Content="Attack" HorizontalAlignment="Left" Margin="57,204,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Hide" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="203,204,0,0"/>
+        <Button Content="Dungeon" HorizontalAlignment="Left" Margin="355,204,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Label Content="monster:" HorizontalAlignment="Left" Margin="41,34,0,0" VerticalAlignment="Top" Height="30" Width="61"/>
+        <Label Content="VarRat" HorizontalAlignment="Left" Margin="107,34,0,0" VerticalAlignment="Top" Height="30" Width="45"/>
+        <Label Content="attack:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="41,64,0,0" Height="29" Width="61"/>
+        <Label Content="VarAttack" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="102,64,0,0" Height="29" Width="50"/>
+        <Label Content="HP:" HorizontalAlignment="Left" Margin="41,93,0,0" VerticalAlignment="Top" Height="28" Width="56"/>
+        <Label Content="VarMonHP" HorizontalAlignment="Left" Margin="102,93,0,0" VerticalAlignment="Top" Height="28" Width="50"/>
+
 
     </Grid>
 </Window>

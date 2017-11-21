@@ -26,26 +26,18 @@ namespace MyFirstApp
             //comment
         }
 
-        private void AirRune_Click(object sender, RoutedEventArgs e)
-        {
-            //als ik op deze knop klik koop ik een airrune crate.
-            ListViewItem li = new ListViewItem();
-            li.Content = "je koopt: 1 X airrune crate";
-            lvwMylistvieuw.Items.Add(li);
-        }
-
-        private void FoodCrate_Click(object sender, RoutedEventArgs e)
-        {
-            //als ik op deze knop klik koop ik een food crate.
-            ListViewItem li = new ListViewItem();
-            li.Content = "je koopt: 1 X Food crate";
-            lvwMylistvieuw.Items.Add(li);
-        }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            //als ik op deze knop klik clear ik de lijst
-            lvwMylistvieuw.Items.Clear();
+            Monster enemy = new Monster();
+            enemy.strMonType = "Rat";
+            enemy.intMonHP = 10;
+            enemy.intMonAttack = 2;
         }
+    }
+    public class Monster
+    {
+        public string strMonType;
+        public int intMonHP;
+        public int intMonAttack;
     }
 }
