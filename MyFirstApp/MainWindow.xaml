@@ -5,18 +5,43 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MyFirstApp"
         mc:Ignorable="d"
-        Title="calculate Crate" Height="350" Width="525">
+        Title="Dungeon Clash" Height="625" Width="600">
     <Grid x:Name="ClrInventory">
-        <Button Content="Attack" HorizontalAlignment="Left" Margin="57,204,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Hide" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="203,204,0,0"/>
-        <Button Content="Dungeon" HorizontalAlignment="Left" Margin="355,204,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <Label Content="monster:" HorizontalAlignment="Left" Margin="41,34,0,0" VerticalAlignment="Top" Height="30" Width="61"/>
-        <Label Content="VarRat" HorizontalAlignment="Left" Margin="107,34,0,0" VerticalAlignment="Top" Height="30" Width="45"/>
-        <Label Content="attack:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="41,64,0,0" Height="29" Width="61"/>
-        <Label Content="VarAttack" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="102,64,0,0" Height="29" Width="50"/>
-        <Label Content="HP:" HorizontalAlignment="Left" Margin="41,93,0,0" VerticalAlignment="Top" Height="28" Width="56"/>
-        <Label Content="VarMonHP" HorizontalAlignment="Left" Margin="102,93,0,0" VerticalAlignment="Top" Height="28" Width="50"/>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Button Name="attack" Content="Attack" Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="2"/>
+        <Button Name="hide" Content="Hide" Grid.Column="5" Grid.Row="5" Grid.ColumnSpan="2"/>
+        <Button Name="dungeon" Content="Dungeon" Grid.Column="9" Grid.Row="5" Grid.ColumnSpan="2" Click="dungeon_Click"/>
+        <Label Name="MonType" Content="Type:" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3"/>
+        <Label Name="MonAttack"  Content="Attack:" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3"/>
+        <Label Name="MonHP" Content="HP:" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="3"/>
+        <Label Name="DungeonLvl" Content="lvl:" Grid.Column="4" Grid.Row="1" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>
