@@ -35,13 +35,28 @@
             <RowDefinition Height="50"/>
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
-        <Button Name="attack" Content="Attack" Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="2"/>
+        <Label Name="MonTitle" FontSize="30" HorizontalContentAlignment="Center" Content="Monster" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3"/>
+        <Label Name="FloorTitle" FontSize="30" HorizontalContentAlignment="Center" Content="Dungeon" Grid.Column="4" Grid.Row="0" Grid.ColumnSpan="3"/>
+        <Label Name="PlyrTitle" FontSize="30" HorizontalContentAlignment="Center" Content="player" Grid.Column="8" Grid.Row="0" Grid.ColumnSpan="3"/>
+        <Button Name="attack" Content="Attack" Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="2" Click="attack_Click"/>
         <Button Name="hide" Content="Hide" Grid.Column="5" Grid.Row="5" Grid.ColumnSpan="2"/>
         <Button Name="dungeon" Content="Dungeon" Grid.Column="9" Grid.Row="5" Grid.ColumnSpan="2" Click="dungeon_Click"/>
-        <Label Name="MonType" Content="Type:" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3"/>
-        <Label Name="MonAttack"  Content="Attack:" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3"/>
-        <Label Name="MonHP" Content="HP:" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="3"/>
-        <Label Name="DungeonLvl" Content="lvl:" Grid.Column="4" Grid.Row="1" Grid.ColumnSpan="2"/>
 
+        <Label Name="MonTypeTitle" FontSize="20" Content="Type:" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <Label Name="MonType" FontSize="20" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <Label Name="MonAttackTitle" FontSize="20" Content="Attack:" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3"/>
+        <Label Name="MonAttack" FontSize="20" HorizontalContentAlignment="Center" Grid.Column="2" Grid.Row="2"/>
+        <Label Name="MonHPTitle" FontSize="20" Content="HP:" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="3"/>
+        <Label Name="MonHP" FontSize="20" Content="0" Grid.Column="2" Grid.Row="3"/>
+        
+        <Label Name="DungeonLvlTitle" FontSize="20" Content="lvl:" Grid.Column="4" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <Label Name="DungeonLvl" FontSize="20" Grid.Column="5" Grid.Row="1"/>
+
+        <Label Name="playertypeTitle" FontSize="20" Content="Type:" Grid.Column="8" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <Label Name="playertype" FontSize="20" Grid.Column="9" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <Label Name="playerattTitle" FontSize="20" Content="Attack:" Grid.Column="8" Grid.Row="2" Grid.ColumnSpan="2"/>
+        <Label Name="playeratt" FontSize="20" HorizontalAlignment="Center" Grid.Column="9" Grid.Row="2" Grid.ColumnSpan="2"/>
+        <Label Name="playerHPTitle" FontSize="20" Content="HP:" Grid.Column="8" Grid.Row="3" Grid.ColumnSpan="2"/>
+        <Label Name="playerHP" FontSize="20" Grid.Column="9" Grid.Row="3" Grid.ColumnSpan="2"/>
     </Grid>
 </Window>
